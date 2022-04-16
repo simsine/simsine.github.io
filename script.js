@@ -23,18 +23,19 @@ for (let i = 0; i<10;i++){
 //    document.getElementById(elem).style.backgroundColor = "white";
 //}
 
-const pageIDs = [$("#header"), $("#body"), $("#footer")];
-console.log(pageIDs)
+const siteElems = $(".siteElem");
+console.log(siteElems)
 
+    // JQuery main function
 $(function(){
-    pageIDs.forEach(elem => {
-        elem.mouseover(()=>{
-            elem.children(".change").text("Hovering");
-            elem.addClass("bordered");
+    $(siteElems).each((_i,t) => {
+        $(t).mouseover(()=>{
+            $(t).children(".change").removeClass("hide");
+            $(t).addClass("bordered");
         })
-        elem.mouseout(()=>{
-            elem.children(".change").text("Outside");
-            elem.addClass("bordered");
+        $(t).mouseout(()=>{
+            $(t).children(".change").addClass("hide");
+            $(t).removeClass("bordered");
         })
     })
 });
