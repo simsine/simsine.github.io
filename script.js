@@ -1,8 +1,6 @@
 function stringToBinary (string) {
     let stringArray = string.split("");
-    console.log(stringArray);
     let bin = "";
-    console.log(string.length)
     for (let i in stringArray){
         if (i == " "){
             bin += " ";

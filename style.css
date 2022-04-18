@@ -1,58 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-        body {
-            --light: white; --dark: #37383F; --middle: #F1F1F1; --primary_font: "Roboto";
-            margin: 0;
-            padding: 0;
-            background-color: var(--light);
-            font-family: var(--primary_font);
-            font-size: x-large;
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden;
-        }
-        h1, p{
-            color: var(--dark);
-            word-wrap: break-word;
-        }
+body {
+    --light: white; --dark: #37383F; --middle: #F1F1F1; --primary_font: "Roboto";
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    font-family: var(--primary_font);
+    font-size: x-large;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+h1, p{
+    color: var(--dark);
+    word-wrap: break-word;
+    line-height: 1.25em;
+}
 
-        div{
-            padding: 0;
-            margin: 0;
-        }
+div{
+    padding: 0;
+    margin: 0;
+}
 
-        .column{
-            float: left;
-        }
+.column{
+    float: left;
+}
 
-        .column.margin{
-            width: 25%;
-            height: 100%;
-            color:var(--middle)
-        }
-        .column.main{
-            width: 50%;
-            height: 100%;
-            background-color: var(--middle);
-            opacity: 50%;
-        }
+.column.margin{
+    width: 25%;
+    height: 100%;
+    color:var(--middle)
+}
+.column.main{
+    width: 50%;
+    height: 100%;
+    background-color: var(--middle);
+    opacity: 50%;
+}
 
-        .container{
-            margin-top: 0px;
-            margin-bottom: 0px;
-            padding: 15px;
-            border: 1px solid var(--middle);
-            text-align: center;
-            box-shadow: 0 0 0.5em 0 rgb(0, 0, 0);
-        }
+@media only screen and (max-width: 850px){
+    .column.margin{
+        display: none;
+    }
+    .column.main{
+        width: 100%;
+    }
+}
 
-        .container:hover{
-            border: 1px solid var(--dark);
-        }
+.container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 15px;
+    border: 1px solid var(--middle);
+    text-align: center;
+}
 
-        .bordered{
-            border: 0 solid white;
-        }
+.container:hover{
+    border: 1px solid var(--dark);
+}
 
-        .hide{
-            opacity: 0;
-        }
+.bordered{
+    border: 0 solid white;
+}
+
+.hide{
+    opacity: 0;
+}
