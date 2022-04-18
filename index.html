@@ -1,65 +1,11 @@
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-        body {
-            --light: white; --dark: #37383F; --middle: #F1F1F1; --primary_font: "Roboto";
-            margin: 0;
-            padding: 0;
-            background-color: var(--light);
-            font-family: var(--primary_font);
-            font-size: x-large;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        h1, p{
-            color: var(--dark);
-        }
-
-        div{
-            padding: 0;
-            margin: 0;
-        }
-
-        .column{
-            float: left;
-        }
-
-        .column.margin{
-            width: 25%;
-            height: 100%;
-            color:var(--middle)
-        }
-        .column.main{
-            width: 50%;
-            height: 100%;
-        }
-
-        .container{
-            margin-top: 0px;
-            margin-bottom: 0px;
-            padding: 15px;
-            border: 1px;
-            text-align: center;
-        }
-
-        .bordered{
-            border: 0 solid white;
-        }
-
-        .hide{
-            opacity: 0;
-        }
-
-    </style>
-
 </head>
 <body>
     <!--Left margin-->
@@ -67,15 +13,17 @@
 
     <!--Main Body-->
     <div class="column main">
-        <div class="container addBorder">
+        <div class="container">
             <h1 class="textelem"></h1>
         </div>
 
-        <div class="container addBorder">
-            <p class="textelem"><p>
+        <div class="container">
+            <p class="textelem"></p>
+            <p class="textelem"></p>
+            <p class="textelem"></p>
         </div>
 
-        <div class="container addBorder">
+        <div class="container">
             <p class="textelem"></p>
         </div>
     </div>
@@ -84,6 +32,7 @@
     <div class="column margin"></div>
 
     <!--Scripts-->
-    <script src="script.js"></script>
+    <script src="./scrambling-text.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
