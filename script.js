@@ -1,3 +1,5 @@
+//import Scrambler from 'scrambling-text';
+
 console.log("Hello World");
 
 for (let i = 0; i<10;i++){
@@ -23,39 +25,47 @@ for (let i = 0; i<10;i++){
 //    document.getElementById(elem).style.backgroundColor = "white";
 //}
 
-const siteElems = $(".siteElem");
-console.log(siteElems)
+function textToHex(str) {
+    var hex = '';
+    for(var i=0;i<str.length;i++) {
+        hex += ''+str.charCodeAt(i).toString(16);
+    }
+    return hex;
+}
+
+const textToBinary = (str = '') => {
+    let res = '';
+    res = str.split('').map(char => {
+       return char.charCodeAt(0).toString(2);
+    }).join(' ');
+    return res;
+ };
+
+const texts = [
+    "Header",
+    "Lorem ipsum dolor sit amet",
+    "Made by XPhaze"
+]
+
+const containers = $(".container");
+const textelems = $(".textelem");
+console.log(containers)
 
     // JQuery main function
 $(function(){
-    $(siteElems).each((_i,t) => {
+
+    $(textelems).each((i,t) => {
+        $(t).text(textToBinary(texts[i]));
+    })
+
+    $(containers).each((_i,t) => {
         $(t).mouseover(()=>{
-            $(t).children(".change").removeClass("hide");
+            $(t).children(".textelem").removeClass("hide");
             $(t).addClass("bordered");
         })
         $(t).mouseout(()=>{
-            $(t).children(".change").addClass("hide");
+            $(t).children(".textelem").addClass("hide");
             $(t).removeClass("bordered");
         })
     })
 });
-
-
-//$("#header").mouseover(()=>{
-//    $("#header").children($(".change")).text("Hovering");
-//});
-//$("#header").mouseout(()=>{
-//    $("#header").children($(".change")).text("Outside");
-//});
-//$("#body").mouseover(()=>{
-//    $("#body").children($(".change")).text("Hovering");
-//});
-//$("#body").mouseout(()=>{
-//    $("#body").children($(".change")).text("Outside");
-//});
-//$("#footer").mouseover(()=>{
-//    $("#footer").children($(".change")).text("Hovering");
-//});
-//$("#footer").mouseout(()=>{
-//    $("#footer").children($(".change")).text("Outside");
-//});
