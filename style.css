@@ -5,15 +5,17 @@ body {
     padding: 0;
     background-color: var(--light);
     font-family: var(--primary_font);
-    font-size: x-large;
+    font-size: 200%;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 }
 h1, p{
-    color: var(--dark);
+    color: black;
     word-wrap: break-word;
     line-height: 1.25em;
+    font-size: 100%;
+    max-height: min-content;
 }
 
 div{
@@ -31,18 +33,24 @@ div{
     color:var(--middle)
 }
 .column.main{
-    width: 50%;
+    width: 1000px;
     height: 100%;
     background-color: var(--middle);
     opacity: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
 }
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 1000px){
     .column.margin{
         display: none;
     }
     .column.main{
         width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        transform: none;
     }
 }
 
