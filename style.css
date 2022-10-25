@@ -29,7 +29,7 @@ h1::after{
 b:hover{
     content: "Simon";
 }
-p{
+p, a{
     font-size: 2em;
 }
 
