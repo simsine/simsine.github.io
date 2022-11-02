@@ -57,7 +57,7 @@ main{
 }
 
 footer {
-    margin-top: auto;
+    justify-self: flex-start;
 }
 
 footer > .social-links{
