@@ -52,6 +52,9 @@ nav{
     display: flex;
     position: fixed;
     justify-content: space-between;
+
+    background-color: #F1F1F1;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 nav a{
     margin: 25px;
@@ -65,6 +68,7 @@ nav .lang-flag {
 }
 
 main{
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     width: 550px;
@@ -94,10 +98,6 @@ footer > .social-links{
         margin-left: 0%;
         margin-right: 0%;
         transform: none;
-    }
-    nav{
-        position:initial;
-        background-color: var(--middle);
     }
 
     h1{
