@@ -9,10 +9,12 @@
 .color4 {color: #b57f95;}
 .color5 {color: #ffb1bc;}
 
+.color6 {color: #292F36;}
+
 body {
     margin: 0;
-    background-color: var(--light);
     height: 200vh;
+    background-color: var(--light);
 
     font-family: var(--primary_font);
     color: var(--dark);
@@ -52,7 +54,7 @@ nav{
     justify-content: space-between;
 }
 nav a{
-    margin: 10px;
+    margin: 25px;
 }
 nav img{
     height: 50px;
@@ -74,7 +76,7 @@ main{
 }
 .container{
     margin-top: 25px;
-    margin-bottom: 25px;    
+    margin-bottom: 25px;
 }
 
 footer {
