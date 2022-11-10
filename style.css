@@ -48,7 +48,7 @@ a{
 }
 
 nav{
-    width: 100%;
+    width: 100vw;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -95,6 +95,11 @@ footer > .social-links{
         margin-right: 0%;
         transform: none;
     }
+    nav{
+        position:initial;
+        background-color: var(--middle);
+    }
+
     h1{
         font-size: 2em;
     }
