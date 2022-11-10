@@ -1,29 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-body {
+:root{
     --light: white; --dark: #37383F; --middle: #F1F1F1; --primary_font: "Roboto", sans-serif;
-    margin: 0;
-    background-color: var(--light);
-    font-family: var(--primary_font);
-    color: var(--light);
-
-    
 }
-
+/* Random color pallette */
 .color1 {color: #2e3042;}
 .color2 {color: #4c4157;}
 .color3 {color: #785a73;}
 .color4 {color: #b57f95;}
 .color5 {color: #ffb1bc;}
 
-h1, p{
-    color: var(--dark);
-    line-height: 1.25em;
-    /* word-spacing: 0.1em; */
-    max-height: min-content;
-}
+body {
+    margin: 0;
+    background-color: var(--light);
+    height: 200vh;
 
-h1{
+    font-family: var(--primary_font);
+    color: var(--dark);
     font-weight: 400;
+}
+h1{
+    font-weight: inherit;
     font-size: 3em;
     margin: 0;
 }
@@ -33,17 +29,43 @@ h1::before{
 h1::after{
     content: " -";
 }
-p, a{
-    font-size: 2rem;
+h2{
+    font-weight: inherit;
+    font-size: 2.5em;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+p{
+    font-weight: inherit;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+nav a{
+    margin: 10px;
+}
+nav img{
+    height: 50px;
+}
+nav .lang-flag {
+    border-radius: 5px;
+    filter: grayscale(50%);
 }
 
 main{
     display: flex;
     flex-direction: column;
-    width: 1000px;
-    /* background-color: var(--middle); */
+    width: 550px;
     margin-left: 50%;
     margin-right: 50%;
     transform: translate(-50%);
@@ -53,11 +75,10 @@ main{
 .container{
     margin-top: 25px;
     margin-bottom: 25px;    
-    /* border: 1px solid var(--middle); */
 }
 
 footer {
-    justify-self: flex-start;
+    justify-self: flex-end;
 }
 
 footer > .social-links{
@@ -65,29 +86,31 @@ footer > .social-links{
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 550px){
     main{
-        width: 100%;
+        width: 100vw;
         margin-left: 0%;
         margin-right: 0%;
         transform: none;
     }
-}
-@media only screen and (max-width: 1000px){
     h1{
-        font-size: 1.8em;
+        font-size: 2em;
     }
-    p, a{
-        font-size: 1.2em;
+    h2{
+        font-size: 1.75em;
+    }
+    p{
+        font-size: 1.5em;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     body{
         background-color: black;
-    }
-    h1, p{
         color: white;
+    }
+    a{
+        color: rgb(208, 173, 240);
     }
     svg{
         fill: white;
