@@ -1,2 +1,2 @@
-# <a href="https://simsine.github.io/" target="_blank">Github pages site</a><br><br>
+# <a href="https://wwww.simsine.no/" target="_blank">Github pages deployment</a><br><br>
 <img src="./media/homepage.png" alt="qr code" width="500px"/>
