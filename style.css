@@ -21,7 +21,7 @@ body {
     font-weight: 400;
 }
 hr{
-    width: 525px;
+    width: 90%;
     height: 5px;
     border: none;
     border-radius: 1px;
@@ -109,7 +109,7 @@ footer div.social-links{
 
 @media only screen and (max-width: 550px){
     main{
-        width: 100vw;
+        width: 100%;
         margin-left: 0%;
         margin-right: 0%;
         transform: none;
