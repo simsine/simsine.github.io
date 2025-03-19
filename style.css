@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Outfit";
+	src: url("./media/Outfit-Regular.woff2") format("woff2");
+}
+
 :root {	
 	--light: white;
 	--dark: #293241;
@@ -11,7 +16,7 @@ body {
 	background-color: var(--light);
 	color: var(--dark);
 
-	font-family: sans-serif;
+	font-family: Outfit, sans-serif;
 }
 hr {
 	width: 90%;
